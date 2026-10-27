@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"bdfaa90d47226ba8","x":-340,"y":-220,"width":250,"height":60,"type":"text","text":"Desgaste do SD"},
+		{"id":"b23d561248776b35","x":-40,"y":-300,"width":250,"height":140,"type":"text","text":"mitigado com WAL e commits em lote. Para experimentos muito longos, um SSD/pendrive USB seria mais seguro."},
+		{"id":"72966afd960d394e","x":-340,"y":100,"width":250,"height":60,"type":"text","text":"Relógio sem NTP"},
+		{"id":"014c44ad45a8b95a","x":-340,"y":0,"width":250,"height":60,"type":"text","text":"Conflito de escrita no SQLite"},
+		{"id":"5f87728795065668","x":-340,"y":-100,"width":250,"height":50,"type":"text","text":"Perda de energia"}
+	],
+	"edges":[
+		{"id":"7d2b20a30e8ce208","fromNode":"bdfaa90d47226ba8","fromSide":"right","toNode":"b23d561248776b35","toSide":"left"}
+	]
+}

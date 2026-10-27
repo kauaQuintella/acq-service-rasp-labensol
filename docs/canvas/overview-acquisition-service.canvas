@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"224baed02e0c5f89","x":-733,"y":-456,"width":813,"height":256,"type":"text","text":"\t\t┌─ Serviço de aquisição ─────────┐         ┌─ Camada web (fase seguinte) ───┐\n\t\t│ dono único do osciloscópio     │         │ FastAPI + uvicorn (1 worker)   │\n\t\t│ único que ESCREVE no SQLite    │────────►│ lê o SQLite (somente leitura)  │\n\t\t│ recebe comandos em JSON        │◄────────│ envia comandos ao serviço      │\n\t\t└────────────────────────────────┘ comandos│ serve a página ao navegador    │\n\t\t        │ USB/LAN                          └───────────────┬────────────────┘\n\t\t        ▼                                                  │ HTTP / WebSocket\n\t\t   Osciloscópio                                    Navegador do professor"},
+		{"id":"5d5c83feb3e0a6a4","x":-703,"y":65,"width":272,"height":60,"type":"text","text":"# Acquisition Loop"},
+		{"id":"6d0c48299b3f4432","x":-820,"y":70,"width":50,"height":50,"type":"text","text":""},
+		{"id":"512270eeadcab865","x":-660,"y":200,"width":186,"height":74,"type":"text","text":"# Instrument "},
+		{"id":"460ff5ea7b730775","x":-663,"y":320,"width":192,"height":60,"type":"text","text":"# Osciloscope"},
+		{"id":"0e9524cbf83c299a","x":-300,"y":28,"width":164,"height":135,"type":"text","text":"# Servico"}
+	],
+	"edges":[
+		{"id":"be940f864b957795","fromNode":"460ff5ea7b730775","fromSide":"top","toNode":"512270eeadcab865","toSide":"bottom"},
+		{"id":"c852c3a348a08ee4","fromNode":"512270eeadcab865","fromSide":"bottom","toNode":"460ff5ea7b730775","toSide":"top"},
+		{"id":"ba6eb05e13bdf15f","fromNode":"512270eeadcab865","fromSide":"top","toNode":"5d5c83feb3e0a6a4","toSide":"bottom"},
+		{"id":"324f4b7cb8bbeb6b","fromNode":"5d5c83feb3e0a6a4","fromSide":"left","toNode":"6d0c48299b3f4432","toSide":"right"},
+		{"id":"41b277e437aa4348","fromNode":"6d0c48299b3f4432","fromSide":"top","toNode":"5d5c83feb3e0a6a4","toSide":"top"},
+		{"id":"a062930c4b307d11","fromNode":"5d5c83feb3e0a6a4","fromSide":"right","toNode":"0e9524cbf83c299a","toSide":"left"}
+	]
+}
